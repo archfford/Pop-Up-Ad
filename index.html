@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   
+    <title>Pop up ad</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <div id="modelBox">
+        <img src="images/josh-redd-Q9S0w7Bhx3A-unsplash.jpg" width="100%">
+        <div class="offer-text">
+            <h2>Get 20% OFF</h2>
+            <small>on all shoe products</small>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quos voluptas, velit sit, repellendus quae sequi fugiat numquam nisi facere deserunt quasi perferendis accusantium. Aperiam eaque quisquam esse aliquid numquam!</p>
+            <form>
+                <input type="email" placeholder="Email Address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <img src="images/close.png" class="close-icon" onclick="closeModel()">
+    </div>
+    <script>
+        let modelBox = document.getElementById("modelBox");
+        document.onmouseleave = function(){
+            modelBox.style.display = "block";
+        }
+        function closeModel(){
+            modelBox.style.display = "none";
+        }
+    </script>
+</body>
+</html>
